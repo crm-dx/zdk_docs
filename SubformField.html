@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> SubformField</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="scripts/run_prettify.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="styles/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/font.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+<!--    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
+        <div class="menu">
+            
+            <div class="navigation">
+                 <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a> 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+        <div class="logo">
+            
+            
+        </div>
+            
+                <div class="search-wrapper">
+                <span class="searchIcon"></span>
+                    <input id="search" type="text" placeholder="Search" class="input">
+                </div>
+            
+            <nav class="nav-wrapper">
+                
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+<!--
+                <header class="page-title">
+                    <h1>ZDK</h1>
+                    <p>The <b>Zoho Development Kit (ZDK)</b> javascript library offers a rich set of client and server interfaces that broaden the scope of Zoho Applications.</p>
+                    <br>
+                </header>
+-->
+                
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>SubformField</h2>
+        
+            <div class="class-description"><p>Class representing a Field in a Subform.</p></div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+    
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Functions</h1>
+            <div class="members">
+            
+            <!-- <m>getApiName</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getApiName">
+        <a class="href-link" href="#getApiName">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    getApiName<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Get the API name of subform field</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>api_name</p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">String</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'var%20field_obj%20%3D%20ZDK.Page.getSubform%28%22CFSubform%22%29.getField%28%27Custom_Lookup1%27%29%3B%0Afield_obj.getApiName%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">var field_obj = ZDK.Page.getSubform("CFSubform").getField('Custom_Lookup1');
+field_obj.getApiName();</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">Custom_Lookup1</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>setCriteria</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setCriteria">
+        <a class="href-link" href="#setCriteria">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    setCriteria<span class="signature">(criteria, config)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Set the criteria for lookup fields</p></p>
+    
+    
+    <div class="description">
+        <p>Note: Supports a maximum of 10 criteria.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>criteria</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>criteria for filtering lookup records</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>config</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>config for criteria</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'var%20field_obj%20%3D%20ZDK.Page.getSubform%28%22CFSubform%22%29.getField%28%27Custom_Lookup1%27%29%3B%0Afield_obj.setCriteria%28%22%28%28Last_Name%3Aequals%3ABurns%29and%28First_Name%3Astarts_with%3AM%29%29%22%2C%20%7BfilterOnSearch%3A%20true%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">var field_obj = ZDK.Page.getSubform("CFSubform").getField('Custom_Lookup1');
+field_obj.setCriteria("((Last_Name:equals:Burns)and(First_Name:starts_with:M))", {filterOnSearch: true});</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+	<script src="scripts/search.js"> </script>
+
+</body>
+</html>

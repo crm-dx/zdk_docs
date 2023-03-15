@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> $Client</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="scripts/run_prettify.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="styles/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/font.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+<!--    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
+        <div class="menu">
+            
+            <div class="navigation">
+                 <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a> 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+        <div class="logo">
+            
+            
+        </div>
+            
+                <div class="search-wrapper">
+                <span class="searchIcon"></span>
+                    <input id="search" type="text" placeholder="Search" class="input">
+                </div>
+            
+            <nav class="nav-wrapper">
+                
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+<!--
+                <header class="page-title">
+                    <h1>ZDK</h1>
+                    <p>The <b>Zoho Development Kit (ZDK)</b> javascript library offers a rich set of client and server interfaces that broaden the scope of Zoho Applications.</p>
+                    <br>
+                </header>
+-->
+                
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>$Client</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+    
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Members</h1>
+            <div class="members">
+            
+                <div class="member">
+
+<h4 class="name" id="userAgent">
+    <a class="href-link" href="#userAgent">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        userAgent
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">client userAgent information</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">string</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.userAgent%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.userAgent;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="isOnline">
+    <a class="href-link" href="#isOnline">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        isOnline
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">client online status</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">boolean</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.isOnline%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.isOnline;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">true</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="platform">
+    <a class="href-link" href="#platform">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        platform
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">client platform information</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">string</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.platform%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.platform;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">web</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="url">
+    <a class="href-link" href="#url">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        url
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">client url</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">string</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.url%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.url;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">https://crm.zoho.com/crm/org77591XXXX/tab/Leads/create?layoutId=527627200000009XXXX</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="geoLocation">
+    <a class="href-link" href="#geoLocation">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        geoLocation
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">current client location information (the user is asked for permission to report location information)</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.geoLocation%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.geoLocation;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">{
+"latitude":8.894601,
+"longitude":77.343917,
+"altitude":null,
+"accuracy":1255.3807245270482,
+"altitudeAccuracy":null,
+"heading":null,
+"speed":null
+}</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Functions</h1>
+            <div class="members">
+            
+            <!-- <m>refresh</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".refresh">
+        <a class="href-link" href="#.refresh">#</a>
+       <!-- prem debug -->
+        
+           <span class="tag green">Detail Page (Canvas)</span>
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    refresh<span class="signature">(config)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">soft-refresh the client</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>config</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"><p>configuration</p></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>triggerOnLoad</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          false
+      
+      </td>
+  
+
+  <td class="description last"><p>to trigger onLoad event of that page</p></td>
+</tr>
+
+  
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample 1<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.refresh%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.refresh();</code></pre>
+
+        <p class="code-caption">Sample 2<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.refresh%28%7BtriggerOnLoad%3A%20true%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.refresh({triggerOnLoad: true});</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>openURL</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".openURL">
+        <a class="href-link" href="#.openURL">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    openURL<span class="signature">(url)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">opens a new browser tab/window</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>url</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>url of the page to be openend</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Client.openURL%28%22https%3A//www.zylker.com%22%29')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Client.openURL("https://www.zylker.com")</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+	<script src="scripts/search.js"> </script>
+
+</body>
+</html>

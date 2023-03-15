@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> $Page</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="scripts/run_prettify.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="styles/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/font.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+<!--    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
+        <div class="menu">
+            
+            <div class="navigation">
+                 <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a> 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+        <div class="logo">
+            
+            
+        </div>
+            
+                <div class="search-wrapper">
+                <span class="searchIcon"></span>
+                    <input id="search" type="text" placeholder="Search" class="input">
+                </div>
+            
+            <nav class="nav-wrapper">
+                
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+<!--
+                <header class="page-title">
+                    <h1>ZDK</h1>
+                    <p>The <b>Zoho Development Kit (ZDK)</b> javascript library offers a rich set of client and server interfaces that broaden the scope of Zoho Applications.</p>
+                    <br>
+                </header>
+-->
+                
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>$Page</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Contextual data that's been shared by the page.</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+    
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Members</h1>
+            <div class="members">
+            
+                <div class="member">
+
+<h4 class="name" id="record">
+    <a class="href-link" href="#record">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        record
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">get current record information stored in the server</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Page.record%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Page.record;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">{
+ First_Name: "John",
+ Full_Name: "John zylker",
+ Last_Name: "zylker",
+ ...
+}</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="record_id">
+    <a class="href-link" href="#record_id">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        record_id
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">get current record id</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">string</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Page.record_id%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Page.record_id;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">527627200000037XXXX</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="layout_id">
+    <a class="href-link" href="#layout_id">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        layout_id
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">get current layout id</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">string</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Page.layout_id%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Page.layout_id;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">527627200000009XXXX</code></pre>
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="module">
+    <a class="href-link" href="#module">#</a>
+    
+    <p class="code-name-parent">
+    <span class="code-name">
+        module
+    </span>
+    </p>
+    
+</h4>
+
+
+<p class="summary"><p class="methodDesc">get current module</p></p>
+
+
+
+    <span class="method-parameter">
+        <label>Type:</label>
+        
+<span class="param-type">string</span>
+
+
+    </span>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, '%24Page.module%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">$Page.module;</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">Leads</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+	<script src="scripts/search.js"> </script>
+
+</body>
+</html>

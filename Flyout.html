@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Flyout</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="scripts/run_prettify.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="styles/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/font.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+<!--    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
+        <div class="menu">
+            
+            <div class="navigation">
+                 <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a> 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+        <div class="logo">
+            
+            
+        </div>
+            
+                <div class="search-wrapper">
+                <span class="searchIcon"></span>
+                    <input id="search" type="text" placeholder="Search" class="input">
+                </div>
+            
+            <nav class="nav-wrapper">
+                
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+<!--
+                <header class="page-title">
+                    <h1>ZDK</h1>
+                    <p>The <b>Zoho Development Kit (ZDK)</b> javascript library offers a rich set of client and server interfaces that broaden the scope of Zoho Applications.</p>
+                    <br>
+                </header>
+-->
+                
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>Flyout</h2>
+        
+            <div class="class-description"><p>Class representing a Flyout Object.</p></div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+    
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Functions</h1>
+            <div class="members">
+            
+            <!-- <m>open</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="open">
+        <a class="href-link" href="#open">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    open<span class="signature">(config, data)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Open Widget component inside a Flyout</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>config</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>Flyout type config</p></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>type</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>flyout type (widget)</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>id</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>id of the widget (Custom Button type)</p></td>
+</tr>
+
+  
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>data</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Any</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>data to be passed into the widget</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.getFlyout%28%27myFlyout%27%29.open%28%7B%20id%3A%20%27111111000000145034%27%2C%20type%3A%20%27widget%27%20%7D%2C%20%7B%20data%3A%20%27sample%20data%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.getFlyout('myFlyout').open({ id: '111111000000145034', type: 'widget' }, { data: 'sample data' });</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>notify</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="notify">
+        <a class="href-link" href="#notify">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    notify<span class="signature">(data, options)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Notify flyout</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>data</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Any</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>data to be passed to the flyout</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>options</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>wait</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+
+  <td class="description last"><p>true/false - wait for response from flyout</p></td>
+</tr>
+
+  
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'var%20response%20%3D%20ZDK.Client.getFlyout%28%27myFlyout%27%29.notify%28%7Bdata%3A%20%27sample%20data%27%7D%2C%20%7Bwait%3A%20true%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">var response = ZDK.Client.getFlyout('myFlyout').notify({data: 'sample data'}, {wait: true});</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>close</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="close">
+        <a class="href-link" href="#close">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    close<span class="signature">()</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Close flyout</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.getFlyout%28%27myFlyout%27%29.close%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.getFlyout('myFlyout').close();</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+	<script src="scripts/search.js"> </script>
+
+</body>
+</html>

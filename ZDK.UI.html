@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> UI</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="scripts/run_prettify.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="styles/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/font.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+<!--    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
+        <div class="menu">
+            
+            <div class="navigation">
+                 <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a> 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+        <div class="logo">
+            
+            
+        </div>
+            
+                <div class="search-wrapper">
+                <span class="searchIcon"></span>
+                    <input id="search" type="text" placeholder="Search" class="input">
+                </div>
+            
+            <nav class="nav-wrapper">
+                
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+<!--
+                <header class="page-title">
+                    <h1>ZDK</h1>
+                    <p>The <b>Zoho Development Kit (ZDK)</b> javascript library offers a rich set of client and server interfaces that broaden the scope of Zoho Applications.</p>
+                    <br>
+                </header>
+-->
+                
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>UI</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+    
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Functions</h1>
+            <div class="members">
+            
+            <!-- <m>freeze</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".freeze">
+        <a class="href-link" href="#.freeze">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    freeze<span class="signature">(value)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Freezes UI</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>value</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>freeze the UI(true/false)</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.UI.freeze%28true%29')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.UI.freeze(true)</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>scrollTo</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".scrollTo">
+        <a class="href-link" href="#.scrollTo">#</a>
+       <!-- prem debug -->
+        
+           <span class="tag green">Detail Page (Canvas)</span>
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    scrollTo<span class="signature">(element_id)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Scrolls the page to the given elements' location</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>element_id</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>id of the element in a Canvas page</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.UI.scrollTo%28%27myElem%27%29')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.UI.scrollTo('myElem')</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>highlight</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".highlight">
+        <a class="href-link" href="#.highlight">#</a>
+       <!-- prem debug -->
+        
+           <span class="tag green">Detail Page (Canvas)</span>
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    highlight<span class="signature">(config)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Highlight a element</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>config</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>configuration property for highlighting</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.UI.highlight%28%27div1%27%2C%20%7Btime%3A%201000%7D%29')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.UI.highlight('div1', {time: 1000})</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>getElementByID</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".getElementByID">
+        <a class="href-link" href="#.getElementByID">#</a>
+       <!-- prem debug -->
+        
+           <span class="tag green">Detail Page (Canvas)</span>
+        
+           <span class="tag blue">Wizard</span>
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    getElementByID<span class="signature">(element_id)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Get the UIElement object.</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>element_id</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>id of the element in a Canvas page</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.UI.getElementByID%28%27section1%27%29')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.UI.getElementByID('section1')</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+	<script src="scripts/search.js"> </script>
+
+</body>
+</html>

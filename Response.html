@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Response</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="scripts/run_prettify.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="styles/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/font.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+<!--    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        
+        <div class="menu">
+            
+            <div class="navigation">
+                 <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a> 
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+        <div class="logo">
+            
+            
+        </div>
+            
+                <div class="search-wrapper">
+                <span class="searchIcon"></span>
+                    <input id="search" type="text" placeholder="Search" class="input">
+                </div>
+            
+            <nav class="nav-wrapper">
+                
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+<!--
+                <header class="page-title">
+                    <h1>ZDK</h1>
+                    <p>The <b>Zoho Development Kit (ZDK)</b> javascript library offers a rich set of client and server interfaces that broaden the scope of Zoho Applications.</p>
+                    <br>
+                </header>
+-->
+                
+
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>Response</h2>
+        
+            <div class="class-description"><p>Class representing a HTTP Response.</p></div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+    
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Functions</h1>
+            <div class="members">
+            
+            <!-- <m>getResponse</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getResponse">
+        <a class="href-link" href="#getResponse">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    getResponse<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Get the response</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>response</p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">Object</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'var%20res%20%3D%20ZDK.HTTP.request%28%7B%27url%27%3A%20%27https%3A//zylker.com%3Fq%3Ddxt%27%2C%20%27method%27%3A%20%27GET%27%7D%29%3B%0Ares.getResponse%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">var res = ZDK.HTTP.request({'url': 'https://zylker.com?q=dxt', 'method': 'GET'});
+res.getResponse();</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>getHeaders</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getHeaders">
+        <a class="href-link" href="#getHeaders">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    getHeaders<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Get the response' header object</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>headers</p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">Object</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'var%20res%20%3D%20ZDK.HTTP.request%28%7B%27url%27%3A%20%27https%3A//zylker.com%3Fq%3Ddxt%27%2C%20%27method%27%3A%20%27GET%27%7D%29%3B%0Ares.getHeaders%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">var res = ZDK.HTTP.request({'url': 'https://zylker.com?q=dxt', 'method': 'GET'});
+res.getHeaders();</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>getStatusCode</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getStatusCode">
+        <a class="href-link" href="#getStatusCode">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    getStatusCode<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary"><p class="methodDesc">Get the response' status code</p></p>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>statuscode</p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">Number</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'var%20res%20%3D%20ZDK.HTTP.request%28%7B%27url%27%3A%20%27https%3A//zylker.com%3Fq%3Ddxt%27%2C%20%27method%27%3A%20%27GET%27%7D%29%3B%0Ares.getStatusCode%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">var res = ZDK.HTTP.request({'url': 'https://zylker.com?q=dxt', 'method': 'GET'});
+res.getStatusCode();</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">201</code></pre>
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+	<script src="scripts/search.js"> </script>
+
+</body>
+</html>
