@@ -1586,7 +1586,7 @@
             
                 
                     
-                    openPopup<span class="signature">(config, data)</span><span class="type-signature"></span>
+                    openPopup<span class="signature">(config, data)</span><span class="type-signature"> &rarr; {object|string|number|boolean}</span>
                 
         </span>
         </p>
@@ -1594,9 +1594,10 @@
     
 
     
-    <!-- prem -->
-    <p class="summary"><p class="methodDesc">Open popup widget</p></p>
     
+    <div class="description">
+        <p>Open popup widget and await a response from the widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a>. Moreover, custom data can be passed to widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Supported Widget SDK version &gt;= 1.2.</p>
+    </div>
     
 
 
@@ -2215,7 +2216,7 @@
       </td>
   
 
-  <td class="description last"><p>data to be passed into the widget</p></td>
+  <td class="description last"><p>data to be passed as <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event data in Widget</p></td>
 </tr>
 
 
@@ -2277,14 +2278,47 @@
 
 
 
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>Response from widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a></p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">object</span>
+|
+
+<span class="param-type">string</span>
+|
+
+<span class="param-type">number</span>
+|
+
+<span class="param-type">boolean</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
 
 
 
     <h5>Example</h5>
     
-        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.openPopup%28%7B%20id%3A%20%27111111000000145034%27%2C%20type%3A%20%27widget%27%2C%20header%3A%20%27Sample%20Widget%27%2C%20animation_type%3A%204%2C%20height%3A%20%27450px%27%2C%20width%3A%20%27450px%27%2C%20left%3A%20%2710px%27%20%7D%2C%20%7B%20data%3A%20%27sample%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.openPopup%28%7B%20id%3A%20%27111111000000145034%27%2C%20type%3A%20%27widget%27%2C%20header%3A%20%27Sample%20Widget%27%2C%20animation_type%3A%204%2C%20height%3A%20%27450px%27%2C%20width%3A%20%27450px%27%2C%20left%3A%20%2710px%27%20%7D%2C%20%7B%20data%3A%20%27sample%20data%20to%20be%20passed%20to%20%22PageLoad%22%20event%20of%20widget%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
     
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.openPopup({ id: '111111000000145034', type: 'widget', header: 'Sample Widget', animation_type: 4, height: '450px', width: '450px', left: '10px' }, { data: 'sample' });</code></pre>
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.openPopup({ id: '111111000000145034', type: 'widget', header: 'Sample Widget', animation_type: 4, height: '450px', width: '450px', left: '10px' }, { data: 'sample data to be passed to "PageLoad" event of widget' });</code></pre>
 
 
 
@@ -2305,7 +2339,7 @@
             
                 
                     
-                    openCallout<span class="signature">(config, target, data)</span><span class="type-signature"></span>
+                    openCallout<span class="signature">(config, target, data)</span><span class="type-signature"> &rarr; {object|string|number|boolean}</span>
                 
         </span>
         </p>
@@ -2313,9 +2347,10 @@
     
 
     
-    <!-- prem -->
-    <p class="summary"><p class="methodDesc">Open callout widget</p></p>
     
+    <div class="description">
+        <p>Open callout widget and await a response from the widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a>. Moreover, custom data can be passed to widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Similar to <a href="ZDK.Client.html#.openPopup">ZDK.Client.openPopup</a> but, opens as a callout to the target component(Eg., Field in form) and by default, widget closes when out of focus. Supported Widget SDK version &gt;= 1.2.</p>
+    </div>
     
 
 
@@ -2696,7 +2731,7 @@
       </td>
   
 
-  <td class="description last"><p>callout target</p></td>
+  <td class="description last"><p>callout target (field)</p></td>
 </tr>
 
 
@@ -2735,7 +2770,7 @@
       </td>
   
 
-  <td class="description last"><p>data to be passed into the widget</p></td>
+  <td class="description last"><p>data to be passed as <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event data in Widget</p></td>
 </tr>
 
 
@@ -2797,6 +2832,39 @@
 
 
 
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>Response from widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a></p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">object</span>
+|
+
+<span class="param-type">string</span>
+|
+
+<span class="param-type">number</span>
+|
+
+<span class="param-type">boolean</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
 
 
 
@@ -2833,9 +2901,10 @@
     
 
     
-    <!-- prem -->
-    <p class="summary"><p class="methodDesc">Create a Flyout</p></p>
     
+    <div class="description">
+        <p>Flyout is a container to show <a href="https://www.zoho.com/crm/developer/docs/widgets/" target='_blank'>Widgets</a> with customizations like position, size, animation etc.,</p>
+    </div>
     
 
 

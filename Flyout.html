@@ -215,9 +215,10 @@
     
 
     
-    <!-- prem -->
-    <p class="summary"><p class="methodDesc">Open Widget component inside a Flyout</p></p>
     
+    <div class="description">
+        <p>Open a Widget in <a href="ZDK.Client.html#.createFlyout" target='_blank'>Flyout</a>. Custom data can be passed to Widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Supported Widget SDK version &gt;= 1.2.</p>
+    </div>
     
 
 
@@ -380,7 +381,7 @@
 
   
 
-  <td class="description last"><p>data to be passed into the widget</p></td>
+  <td class="description last"><p>data to be passed as <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event data in Widget</p></td>
 </tr>
 
 
@@ -447,9 +448,10 @@
 
     <h5>Example</h5>
     
-        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.getFlyout%28%27myFlyout%27%29.open%28%7B%20id%3A%20%27111111000000145034%27%2C%20type%3A%20%27widget%27%20%7D%2C%20%7B%20data%3A%20%27sample%20data%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.createFlyout%28%27myFlyout%27%2C%20%7B%20header%3A%20%27Sample%20Flyout%27%2C%20animation_type%3A%204%20%7D%29%3B%0AZDK.Client.getFlyout%28%27myFlyout%27%29.open%28%7B%20id%3A%20%27111111000000145034%27%2C%20type%3A%20%27widget%27%20%7D%2C%20%7B%20data%3A%20%27sample%20data%20to%20be%20passed%20to%20the%20widget%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
     
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.getFlyout('myFlyout').open({ id: '111111000000145034', type: 'widget' }, { data: 'sample data' });</code></pre>
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.createFlyout('myFlyout', { header: 'Sample Flyout', animation_type: 4 });
+ZDK.Client.getFlyout('myFlyout').open({ id: '111111000000145034', type: 'widget' }, { data: 'sample data to be passed to the widget' });</code></pre>
 
 
 
@@ -470,7 +472,7 @@
             
                 
                     
-                    notify<span class="signature">(data, options)</span><span class="type-signature"></span>
+                    notify<span class="signature">(data, options)</span><span class="type-signature"> &rarr; {Any}</span>
                 
         </span>
         </p>
@@ -478,9 +480,10 @@
     
 
     
-    <!-- prem -->
-    <p class="summary"><p class="methodDesc">Notify flyout</p></p>
     
+    <div class="description">
+        <p>Notify Flyout and optionally await a response from the Widget. Moreover, custom data can be listened from widget through <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'Notify'</a> event. If options.wait is true, data can be listened through <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'NotifyAndWait'</a> event.</p>
+    </div>
     
 
 
@@ -543,7 +546,7 @@
 
   
 
-  <td class="description last"><p>data to be passed to the flyout</p></td>
+  <td class="description last"><p>data can be listened through <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>Notify / NotifyAndWait</a> event in Widget</p></td>
 </tr>
 
 
@@ -612,7 +615,7 @@
 
   
 
-  <td class="description last"><p>true/false - wait for response from flyout</p></td>
+  <td class="description last"><p>true/false - wait for response from Widget</p></td>
 </tr>
 
   
@@ -676,6 +679,30 @@
 
 
 
+    <div class='method-parameter'>
+        <div class="param-DescContainer"><label>Returns</label></div>
+        <div>
+            
+                    
+
+<div>
+    
+    <div class='param-desc'><p>Response from Widget's <a href="https://help.zwidgets.com/help/v1.2/ZDK.Client.html#.sendResponse" target='_blank'>ZDK.Client.sendResponse</a> if options.wait is true</p></div>
+    
+    
+    <div class='param-typeContainer'>
+        <label>Type: </label>
+        
+<span class="param-type">Any</span>
+
+
+    </div>
+    
+</div>
+                
+        </div>
+    </div>
+
 
 
 
@@ -713,7 +740,7 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Close flyout</p></p>
+    <p class="summary"><p class="methodDesc">Close Flyout</p></p>
     
     
 
