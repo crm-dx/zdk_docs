@@ -12755,6 +12755,15 @@ pre.prettyprint li.L9 {
 .blue {
 	background: #69A9DD !important;
 }
+.violet {
+	background: #787ace !important;
+}
+.red {
+	background: #ff6464 !important;
+}
+.black {
+	background: #727272 !important;
+}
 
 .mermaid .node g.label div {
 	font-weight: normal;
