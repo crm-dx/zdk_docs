@@ -67,7 +67,7 @@
             
             <nav class="nav-wrapper">
                 
-                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,navigateTo,openPopup,openCallout,createFlyout,getFlyout"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
+                    <div class="category" data="undefined"></div><div class="category" data="ZDK"><h2>ZDK</h2><h3>Namespaces</h3><ul><li data-methods="getField,getFields,getSubform,getComponent,getComponents,getForm,getList,getButtonByID,getButton,getButtons,getLinkByID,getLinks,getBlueprintTransitionByID,getBlueprintTransitions,addTag,removeTag,getTags"><a href="ZDK.Page.html">Page</a></li><li data-methods="showMessage,showAlert,showConfirmation,getInput,openMailer,navigateTo,openPopup,openCallout,createFlyout,getFlyout,showLoader,hideLoader"><a href="ZDK.Client.html">Client</a></li><li data-methods="request"><a href="ZDK.HTTP.html">HTTP</a></li><li data-methods="freeze,scrollTo,highlight,getElementByID"><a href="ZDK.UI.html">UI</a></li></ul></div><div class="category" data="Utilities"><h2>Utilities</h2><h3>Namespaces</h3><ul><li><a href="$Crm.html">$Crm</a></li><li data-methods="refresh,openURL,copyToClipboard"><a href="$Client.html">$Client</a></li><li><a href="$Page.html">$Page</a></li></ul></div><div class="category" data="Objects"><h2>Objects</h2><h3>Classes</h3><ul><li data-methods="getApiName,mask,showError,setValue,getValue,setMandatory,setMaxLength,setReadOnly,setVisibility,addStyle,addInfo,addTooltip,setCriteria,getPicklistOptions"><a href="Field.html">Field</a></li><li data-methods="getApiName,getField"><a href="Subform.html">Subform</a></li><li data-methods="getApiName,setCriteria"><a href="SubformField.html">SubformField</a></li><li data-methods="getId,getName,initiate"><a href="BlueprintTransition.html">BlueprintTransition</a></li><li data-methods="getId,getType,getLabel,getApiName,click,disable,enable,setLabel"><a href="Button.html">Button</a></li><li data-methods="getId,getName,click,disable,enable"><a href="Link.html">Link</a></li><li data-methods="setValues,getValues"><a href="Form.html">Form</a></li><li data-methods="setValue,getValue,setVisibility,getOptions,setOptions,transitionTo"><a href="Component.html">Component</a></li><li data-methods="freezeColumns,maskField,sortByField,getRecords,selectRecords,selectRecordsByID,clearSelection,style"><a href="List.html">List</a></li><li data-methods="open,notify,close"><a href="Flyout.html">Flyout</a></li><li data-methods="getResponse,getHeaders,getStatusCode"><a href="Response.html">Response</a></li><li data-methods="setVisibility,addToolTip,removeToolTip,addStyle,freeze,setReadOnly,setContent,setImage,setActive"><a href="UIElement.html">UIElement</a></li></ul></div>
                 
             </nav>
         </div>
@@ -183,8 +183,23 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Show a toast message in Page</p></p>
+    <p class="summary">Show a toast message in Page with following markdown support.</p>
     
+    
+    <div class="description">
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups. Image Markdown not supported for showMessage.
+<br> </p>
+<pre style='background-color: #f8faff'><code>Italics       - _text_
+<br>Bold        - *text*
+<br>Underline   - __text__
+<br>Strikeout   - ~text~
+<br>Code        - `text`
+<br>Heading1    - # text
+<br>Heading3    - ### text
+<br>Blockquote  - !text
+<br>Hyperlink   - [click here](https://www.zoho.com)</code></pre>
+<br>
+    </div>
     
 
 
@@ -408,27 +423,11 @@
 
 
 
-    <h5>Examples</h5>
+    <h5>Example</h5>
     
-        <p class="code-caption">Regular text<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showMessage%28%27This%20is%20a%20regular%20message.%27%2C%20%7B%20type%3A%20%27info%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
-    
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showMessage('This is a regular message.', { type: 'info' });</code></pre>
-
-        <p class="code-caption">Text with italics<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showMessage%28%27This%20is%20an%20_important_%20message.%27%2C%20%7B%20type%3A%20%27info%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
-    
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showMessage('This is an _important_ message.', { type: 'info' });</code></pre>
-
         <p class="code-caption">Warning with bold<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showMessage%28%27This%20is%20an%20*important*%20warning.%27%2C%20%7B%20type%3A%20%27warning%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
     
     	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showMessage('This is an *important* warning.', { type: 'warning' });</code></pre>
-
-        <p class="code-caption">Error with underline<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showMessage%28%27This%20is%20an%20__important__%20error.%27%2C%20%7B%20type%3A%20%27error%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
-    
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showMessage('This is an __important__ error.', { type: 'error' });</code></pre>
-
-        <p class="code-caption">Text with link<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showMessage%28%27You%20can%20%5Bclick%20here%5D%28https%3A//www.zylker.com%29%20to%20visit%20the%20page.%27%2C%20%7B%20type%3A%20%27info%27%20%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
-    
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showMessage('You can [click here](https://www.zylker.com) to visit the page.', { type: 'info' });</code></pre>
 
 
 
@@ -458,8 +457,12 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Show Alert message</p></p>
+    <p class="summary">Show Alert message with markdown support.</p>
     
+    
+    <div class="description">
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
+    </div>
     
 
 
@@ -687,6 +690,10 @@
     
     	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showAlert('This is an __important__ message\n This is an *important* message');</code></pre>
 
+        <p class="code-caption">Alert with image<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showAlert%28%27%21%5Balt%20text%5D%28https%3A//link-to/sample.png%29%27%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showAlert('![alt text](https://link-to/sample.png)');</code></pre>
+
 
 
 </div>
@@ -715,8 +722,12 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Show confirmation box with accept and reject message</p></p>
+    <p class="summary">Show confirmation box with markdown support and accept/reject message.</p>
     
+    
+    <div class="description">
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
+    </div>
     
 
 
@@ -962,9 +973,9 @@
     
     	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showConfirmation('Are you sure?');</code></pre>
 
-        <p class="code-caption">Customised Confirmation Box<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showConfirmation%28%27Are%20you%20sure%3F%27%2C%20%27Yes.%20Got%20it%21%27%2C%20%27Nope%27%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+        <p class="code-caption">Customised Confirmation Box<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showConfirmation%28%27Are%20you%20*sure*%3F%27%2C%20%27Yes.%20Got%20it%21%27%2C%20%27Nope%27%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
     
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showConfirmation('Are you sure?', 'Yes. Got it!', 'Nope');</code></pre>
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showConfirmation('Are you *sure*?', 'Yes. Got it!', 'Nope');</code></pre>
 
         <p class="code-caption">Output</p>
     
@@ -998,8 +1009,12 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Get one or more input</p></p>
+    <p class="summary">Get one or more input.</p>
     
+    
+    <div class="description">
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
+    </div>
     
 
 
@@ -1046,7 +1061,43 @@
   <td class="type">
   
       
-<span class="param-type">Array.&lt;{type: ('text'|'number'), label: string}></span>
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>type</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;{type: ('text'|'number'|'textarea'|'picklist')}></span>
 
 
   
@@ -1067,13 +1118,131 @@
   
       <td class="default">
       
-          [{ type: 'text' }]
+          'text'
       
       </td>
   
 
-  <td class="description last"><p>Input options (Max. 7)</p></td>
+  <td class="description last"><p>Max Value Limit
+Input options - 7
+<br> <code>text</code> - 120 characters
+<br> <code>number</code> - 50 digits
+<br> <code>textarea</code> - 2000 characters
+<br> <code>picklist options</code> - 500 options (each option - 120 characters)</p></td>
 </tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>label</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"><p>label for input field</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>default_value</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>list_options</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;{actual_value: string, display_value: string}></span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"><p>list of options for picklist</p></td>
+</tr>
+
+  
 
 
         
@@ -1292,6 +1461,22 @@
     
     	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">['120', 'Batch A']</code></pre>
 
+        <p class="code-caption">Default value sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.getInput%28%5B%7B%20type%3A%20%27textarea%27%2C%20label%3A%20%27Enter%20batch%20name%27%2C%20default_value%3A%27sample%27%20%7D%5D%2C%20%27Employees%27%2C%20%27OK%27%2C%20%27Cancel%27%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.getInput([{ type: 'textarea', label: 'Enter batch name', default_value:'sample' }], 'Employees', 'OK', 'Cancel');</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">['sample']</code></pre>
+
+        <p class="code-caption">For picklist,<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.getInput%28%5B%7B%20type%3A%20%27picklist%27%2C%20label%3A%20%27Enter%20branch%27%2C%20list_options%3A%20%5B%7B%20actual_value%3A%20%22Sales%22%2C%20display_value%3A%20%22Sales%20Department%22%20%7D%2C%20%7B%20actual_value%3A%20%22HR%22%2C%20display_value%3A%20%22HR%20Department%22%20%7D%5D%2C%20default_value%3A%22HR%22%20%7D%5D%2C%20%27Employees%27%2C%20%27OK%27%2C%20%27Cancel%27%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.getInput([{ type: 'picklist', label: 'Enter branch', list_options: [{ actual_value: "Sales", display_value: "Sales Department" }, { actual_value: "HR", display_value: "HR Department" }], default_value:"HR" }], 'Employees', 'OK', 'Cancel');</code></pre>
+
+        <p class="code-caption">Output</p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">['HR']</code></pre>
+
 
 
 </div>
@@ -1324,8 +1509,12 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Open Mailer component</p></p>
+    <p class="summary">Open Mailer component.</p>
     
+    
+    <div class="description">
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
+    </div>
     
 
 
@@ -1498,6 +1687,29 @@
 </tr>
 
   
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>templateId</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>email template id</p></td>
+</tr>
+
+  
 
 
         
@@ -1563,9 +1775,9 @@
 
     <h5>Example</h5>
     
-        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.openMailer%28%7Bfrom%3A%20%27example@zoho.com%27%2C%20to%3A%20%5B%7Bemail%3A%20%27zylker@zyldomain.com%27%2C%20label%3A%20%27Zylker%27%7D%5D%2C%20cc%3A%20%5B%7Bemail%3A%20%27info@zyldomain.com%27%2C%20label%3A%20%27Zylker%20Info%27%7D%5D%2C%20subject%3A%20%27Welcome%20to%20Client%20Script%27%2C%20body%3A%20%27Hi%20Zylker%21%21%27%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.openMailer%28%7Bfrom%3A%20%27example@zoho.com%27%2C%20to%3A%20%5B%7Bemail%3A%20%27zylker@zyldomain.com%27%2C%20label%3A%20%27Zylker%27%7D%5D%2C%20cc%3A%20%5B%7Bemail%3A%20%27info@zyldomain.com%27%2C%20label%3A%20%27Zylker%20Info%27%7D%5D%2C%20subject%3A%20%27Welcome%20to%20Client%20Script%27%2C%20body%3A%20%27Hi%20Zylker%21%21%27%2C%20templateId%3A%221776121000000732265%22%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
     
-    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.openMailer({from: 'example@zoho.com', to: [{email: 'zylker@zyldomain.com', label: 'Zylker'}], cc: [{email: 'info@zyldomain.com', label: 'Zylker Info'}], subject: 'Welcome to Client Script', body: 'Hi Zylker!!'});</code></pre>
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.openMailer({from: 'example@zoho.com', to: [{email: 'zylker@zyldomain.com', label: 'Zylker'}], cc: [{email: 'info@zyldomain.com', label: 'Zylker Info'}], subject: 'Welcome to Client Script', body: 'Hi Zylker!!', templateId:"1776121000000732265"});</code></pre>
 
 
 
@@ -1595,7 +1807,7 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Navigate to record's detail page, create page, list view etc.,</p></p>
+    <p class="summary">Navigate to record's detail page, create page, list view etc.,</p>
     
     
 
@@ -1656,6 +1868,9 @@
 |
 
 <span class="param-type">'record_edit'</span>
+|
+
+<span class="param-type">'record_list'</span>
 
 
   
@@ -1677,11 +1892,12 @@
       </td>
   
 
-  <td class="description last"><p><code>tab</code> - List view page / Web Tab
+  <td class="description last"><p><code>tab</code> - Web Tab / Default list view page
 <br><code>record_create</code> - Record create page
 <br><code>record_edit</code> - Record edit page
 <br><code>record_detail</code> - Record detail page
-<br><code>record_clone</code> - Record clone page</p></td>
+<br><code>record_clone</code> - Record clone page
+<br><code>record_list</code> - Listview Page</p></td>
 </tr>
 
 
@@ -1798,6 +2014,43 @@
     
 <tr class="deep-level-1">
   
+      <td class="name"><code>layout_id</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"><p>id of the layout</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
       <td class="name"><code>custom_view_id</code></td>
   
 
@@ -1869,7 +2122,9 @@
       </td>
   
 
-  <td class="description last"><p>data to be passed to 'PageLoad' event of webtab widgets</p></td>
+  <td class="description last"><p><code>Web tab</code>- data to be passed to the widgets and get the data from <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event of widgets.
+<br><code>Other Pages</code> -  can pass custom data when navigating from one page to another and then access that data on the target page.
+<br> - To retrieve navigation data, <a href="$Page.html#navigation_data" target='_blank'>'$Page.navigation_data'</a> can be used.</p></td>
 </tr>
 
 
@@ -1913,7 +2168,8 @@
       </td>
   
 
-  <td class="description last"><p>open in new tab/self</p></td>
+  <td class="description last"><p><code>_self</code> - open in same tab
+<br> <code>_blank</code> - open in new tab</p></td>
 </tr>
 
 
@@ -1996,6 +2252,14 @@
     
     	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.navigateTo('record_detail', { module: 'Leads', record_id: '11111023162335' });</code></pre>
 
+        <p class="code-caption">Custom data to be passed and the data can be accessed from $Page.navigation_data<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.navigateTo%28%27record_list%27%2C%20%7B%20module%3A%20%27Leads%27%2C%20custom_view_id%3A%20%27111111000000046541%27%2C%20custom_data%3A%20%5B%7B%20key%3A%20%22value%22%7D%5D%20%7D%2C%27_self%27%2C%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.navigateTo('record_list', { module: 'Leads', custom_view_id: '111111000000046541', custom_data: [{ key: "value"}] },'_self',);</code></pre>
+
+        <p class="code-caption">Leads record create page with layout<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.navigateTo%28%27record_create%27%2C%20%7B%20module%3A%20%27Leads%27%2C%20layout_id%3A%20%22111111000000069302%22%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.navigateTo('record_create', { module: 'Leads', layout_id: "111111000000069302"});</code></pre>
+
 
 
 </div>
@@ -2023,9 +2287,12 @@
     
 
     
+    <!-- prem -->
+    <p class="summary">Open popup widget and await a response from the widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a>. Moreover, custom data can be passed to widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Supported Widget SDK version >= 1.2.</p>
+    
     
     <div class="description">
-        <p>Open popup widget and await a response from the widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a>. Moreover, custom data can be passed to widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Supported Widget SDK version &gt;= 1.2.</p>
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
     </div>
     
 
@@ -2166,7 +2433,7 @@
       </td>
   
 
-  <td class="description last"><p>Popup type (widget)</p></td>
+  <td class="description last"><p>widget</p></td>
 </tr>
 
   
@@ -2776,9 +3043,12 @@
     
 
     
+    <!-- prem -->
+    <p class="summary">Open callout widget and await a response from the widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a>. Moreover, custom data can be passed to widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Similar to [ZDK.Client.openPopup](ZDK.Client.html#.openPopup) but, opens as a callout to the target component(Eg., Field in form) and by default, widget closes when out of focus. Supported Widget SDK version >= 1.2.</p>
+    
     
     <div class="description">
-        <p>Open callout widget and await a response from the widget's <a href="https://help.zwidgets.com/help/v1.2/$Client.html#.close" target='_blank'>$Client.close()</a>. Moreover, custom data can be passed to widget's <a href="https://help.zwidgets.com/help/v1.2/index.html" target='_blank'>'PageLoad'</a> event. Similar to <a href="ZDK.Client.html#.openPopup">ZDK.Client.openPopup</a> but, opens as a callout to the target component(Eg., Field in form) and by default, widget closes when out of focus. Supported Widget SDK version &gt;= 1.2.</p>
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
     </div>
     
 
@@ -4004,7 +4274,7 @@
 
     
     <!-- prem -->
-    <p class="summary"><p class="methodDesc">Get a Flyout with name</p></p>
+    <p class="summary">Get a Flyout with name</p>
     
     
 
@@ -4152,6 +4422,408 @@
         <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.getFlyout%28%27myFlyout%27%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
     
     	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.getFlyout('myFlyout');</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>showLoader</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".showLoader">
+        <a class="href-link" href="#.showLoader">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    showLoader<span class="signature">(config)</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary">Display the loader with message.</p>
+    
+    
+    <div class="description">
+        <p>Note: The presence of an active loader restricts the availability of other pop-ups.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>config</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last"></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>type</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">'page'</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'page'
+      
+      </td>
+  
+
+  <td class="description last"><p>type of loader</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>template</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">'spinner'</span>
+|
+
+<span class="param-type">'vertical-bar'</span>
+|
+
+<span class="param-type">'standard'</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'standard'
+      
+      </td>
+  
+
+  <td class="description last"><p>templates of loader (Note: spinner and vertical bar can be used when invoking time consuming APIs)</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>message</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">'String'</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          null
+      
+      </td>
+  
+
+  <td class="description last"><p>message to be displayed
+<code>limit</code> 240 characters</p></td>
+</tr>
+
+  
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.showLoader%28%7Btype%3A%20%27page%27%2C%20template%3A%27vertical-bar%27%2C%20message%3A%20%27Loading%20...%27%7D%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.showLoader({type: 'page', template:'vertical-bar', message: 'Loading ...'});</code></pre>
+
+
+
+</div>
+            
+            <!-- <m>hideLoader</m> -->
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".hideLoader">
+        <a class="href-link" href="#.hideLoader">#</a>
+       <!-- prem debug -->
+        
+        <p class="code-name-parent">
+        <span class="code-name">
+       
+            
+                
+                    
+                    hideLoader<span class="signature">()</span><span class="type-signature"></span>
+                
+        </span>
+        </p>
+    </h4>
+    
+
+    
+    <!-- prem -->
+    <p class="summary">Hides the Loader</p>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+        <p class="code-caption">Sample<span class="codeCopyBtn" onclick="copyTextToClipboard(this, 'ZDK.Client.hideLoader%28%29%3B')">Copy<span class="codeCopyBtnTooltip">copied</span></span></p>
+    
+    	<pre class="prettyprint" style="padding-right: 100px;"><code style="word-break: break-word;white-space: break-spaces;">ZDK.Client.hideLoader();</code></pre>
 
 
 
